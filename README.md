@@ -2,14 +2,14 @@
 
 The files in this repository were used to configure the network depicted below.
 
-[TODO: Update the path with the name of your diagram](Images/diagram_filename.png) https://app.diagrams.net/#G1mUlqHjCbLol0Bw6R1KyVzTstcozPsN4y
+[TODO: Update the path with the name of your diagram](Images/diagram_filename.png) https://app.diagrams.net/#G1mUlqHjCbLol0Bw6R1KyVzTstcozPsN4y *How to update images?
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
 
   - _TODO: Enter the playbook file._  *Do I need to make an all encompassing YAML file for this? 
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -40,7 +40,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Web-2    | Access to App  | 10.0.0.5   | Linux            |
 | Web-3    | Access to App  | 10.0.0.6   | Linux            |
 | Load Balancer    | App Persistence      | 13.68.199.33 | Linux |
-| ELK Stack|          | 10.1.0.4, 20.55.207.145   | Linux            |
+| ELK Stack| Monitor App   | 10.1.0.4, 20.55.207.145   | Linux            |
 
 ### Access Policies
 
@@ -101,13 +101,19 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the _____ file to _____.
+#.deb(config) /etc/ansible/files
 - Update the _____ file to include...
+#config file to include the host IPs that the playbook will configure. 
 - Run the playbook, and navigate to ____ to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+To specify a particular machine to update via the playbook files, navigate to the hosts file within the Ansible container within the Jump-Box-Provisioner machine. You may establish a new group within the hosts file that YAML files may be run on. However, once a new group is created, you will need to point to it within the desired YAML playbook file. For instance if you create a new hosts group called "Test-1" that you wish to install the ELK server on, navigate to the ELK-install.yml file and open the editor. Then modify the hosts it points to to include the "Test-1" group. 
 - _Which URL do you navigate to in order to check that the ELK server is running?
+http://20.55.207.145:5610/app/kibana
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
-
+ansible-playbook /etc/ansible/roles/filebeat-install.yml
+ansible-playbook /etc/ansible/roles/ELK-install.yml
+ansible-playbook /etc/ansible/roles/my-first-playbook.yml
