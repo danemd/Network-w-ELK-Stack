@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-To make grading easier I've linked the required screenshots here (I'll delete them after the projects graded)
+To make grading easier I've linked the required screenshots here (I'll delete them after the projects graded, the answers have also been bolded below.)
  
  [Red-NSG](https://github.com/danemd/Network-w-ELK-Stack/blob/screenshots/nsg_red.png)
  
