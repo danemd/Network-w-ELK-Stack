@@ -21,7 +21,9 @@ To make grading easier I've linked the required screenshots here (I'll delete th
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
 
   [Elk Install](https://github.com/danemd/Network-w-ELK-Stack/blob/YAML/ELK-Install.yml)
+  
   [Filebeat Install](https://github.com/danemd/Network-w-ELK-Stack/blob/screenshots/filebeat-playbook.yml)
+  
   [Metricbeat Install](https://github.com/danemd/Network-w-ELK-Stack/blob/screenshots/metricbeat-playbook.yml)
 
 This document contains the following details:
