@@ -1,8 +1,6 @@
 # Network-w-ELK-Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
-
-To make grading easier I've linked the required screenshots here (I'll delete them after the projects graded, the answers have also been bolded below.)
  
  [Red-NSG](https://github.com/danemd/Network-w-ELK-Stack/blob/screenshots/nsg_red.png)
  
@@ -13,8 +11,6 @@ To make grading easier I've linked the required screenshots here (I'll delete th
  [Topology](https://github.com/danemd/Network-w-ELK-Stack/blob/screenshots/topology.png)
  
  [Peering](https://github.com/danemd/Network-w-ELK-Stack/blob/screenshots/red-ELK_peering.png)
- 
-[Diagram](Images/diagram_filename.png) 
 
 ![Network Diagram](https://github.com/danemd/Network-w-ELK-Stack/blob/Network-Diagram/Network%20W_%20ELK%20Stack%20(1).jpg)
 
