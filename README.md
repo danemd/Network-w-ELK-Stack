@@ -94,7 +94,7 @@ The following screenshot displays the result of running `docker ps` after succes
 This ELK server is configured to monitor the following machines:
 10.0.0.4, 10.0.0.5, 10.0.0.6
 
-We have installed the following Beats on these achines:
+We have installed the following Beats on these machines:
 Filebeat and Metricbeat
 
 These Beats allow us to collect the following information from each machine:
